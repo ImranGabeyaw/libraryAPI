@@ -1,0 +1,39 @@
+<head>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid lightgrey;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 2px 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<h2>{{text}}</h2>
+<table>
+    <thead>
+        <tr>
+            {{#each arr.[0]}}
+            <th>{{@key}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each arr}}
+        <tr>
+            {{#each this}}
+            <td>{{this}}</td>
+            {{/each}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+<body>
+<h2>Please choose a username to join the {{title}} chatroom with</h2>
+<form action="/forms/chatroom" method="GET">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" required><br>
+  <input type="hidden" name="title" value="{{title}}">
+  {{e}} <br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
